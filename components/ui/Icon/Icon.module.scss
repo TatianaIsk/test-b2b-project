@@ -5,11 +5,23 @@
   width: 36px;
   height: 36px;
 
-	&.whatsapp {
-		background-image: url('./../../../assets/icons/whatsapp.svg');
-	}
+  &.whatsapp {
+    background-image: url('./../../../assets/icons/whatsapp.svg');
+  }
 
-	&.telegram {
-		background-image: url('./../../../assets/icons/telegram.svg');
-	}
+  &.telegram {
+    background-image: url('./../../../assets/icons/telegram.svg');
+  }
+
+  &.wallet {
+    width: 70px;
+    height: 70px;
+    background-image: url('./../../../assets/icons/wallet.svg');
+  }
+
+  &.options {
+    width: 30px;
+    height: 32px;
+    background-image: url('./../../../assets/icons/options.svg');
+  }
 }

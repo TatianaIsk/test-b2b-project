@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import s from './Icon.module.scss';
 
-export type IconsVariants = 'whatsapp' | 'telegram';
+export type IconsVariants = 'whatsapp' | 'telegram' | 'wallet' | 'options';
 
 interface IconProps {
   name: IconsVariants;

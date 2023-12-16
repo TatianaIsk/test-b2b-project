@@ -1,0 +1,85 @@
+@import './../../../styles/_variables.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 160px 0 140px 150px;
+
+  .title {
+    color: $color-white;
+    font-family: 'Lora';
+    font-size: 64px;
+    font-weight: 400;
+    max-width: 729px;
+    margin-bottom: 48px;
+  }
+
+  .wallet {
+    display: flex;
+    margin-bottom: 64px;
+  }
+
+  .wallet > :first-child {
+    margin-right: 31px;
+  }
+
+  .text {
+    color: $color-white;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 400;
+    max-width: 342px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  .price > :first-child {
+    margin-bottom: 15px;
+    color: $color-white;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+	.btn {
+		background: none;
+	}
+
+	.line {
+		position: absolute;
+		top: 383px;
+		left: 0;
+	}
+
+	.arrow {
+		position: absolute;
+		top: 656px;
+		left: 385px;
+	}
+
+  .optionFirst {
+    max-width: 240px;
+    position: absolute;
+    top: 179px;
+    left: 546px;
+  }
+
+  .optionSecond {
+    max-width: 266px;
+    position: absolute;
+    top: 328px;
+    left: 959px;
+  }
+
+  .optionThird {
+    max-width: 215px;
+    position: absolute;
+    top: 528px;
+    left: 891px;
+  }
+}

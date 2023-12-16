@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(205, 90%, 14%);
+  background-color: $color-dark-blue;
+	opacity: 0.9;
 
   .logo {
     display: flex;
