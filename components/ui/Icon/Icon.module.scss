@@ -1,0 +1,15 @@
+@import './../../../styles/_variables.scss';
+
+.icon {
+  @include background-style;
+  width: 36px;
+  height: 36px;
+
+	&.whatsapp {
+		background-image: url('./../../../assets/icons/whatsapp.svg');
+	}
+
+	&.telegram {
+		background-image: url('./../../../assets/icons/telegram.svg');
+	}
+}

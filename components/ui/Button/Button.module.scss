@@ -1,0 +1,12 @@
+@import './../../../styles/_variables.scss';
+
+.button {
+	padding: 15px 26px;
+	border: 1px solid $color-white; 
+	background-color: $color-dark-blue;
+
+	color: $color-white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
