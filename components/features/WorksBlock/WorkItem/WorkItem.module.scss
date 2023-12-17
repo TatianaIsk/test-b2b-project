@@ -9,10 +9,30 @@
   max-width: 588px;
   margin: 0 48px 48px 198px;
 
+  @media screen and (max-width: $laptop-l) {
+    padding: 50px 40px 50px 53px;
+  }
+
+  @media screen and (max-width: $laptop-m) {
+    padding: 50px 20px 50px 53px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    padding: 56px 48px 54px 133px;
+  }
+
   .title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 14px;
+
+    @media screen and (max-width: $laptop-l) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $laptop) {
+      font-size: 24px;
+    }
   }
 
   .subtitle {
@@ -30,27 +50,41 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-		margin-bottom: 46px;
+    margin-bottom: 46px;
 
     .bold {
       font-weight: 700;
     }
   }
 
-	.btn {
-		background: none;
-		border: 1px solid $color-grey-dark;
-		color: $color-grey-dark;
-	}
+  .btn {
+    background: none;
+    border: 1px solid $color-grey-dark;
+    color: $color-grey-dark;
+  }
 
-	.btns > :first-child {
+  .btns > :first-child {
     margin-right: 16px;
   }
 
-	.img {
-		position: absolute;
-		left: 0;
-		margin-left: -193px;
-		margin-top: -21px;
-	}
+  .img {
+    position: absolute;
+    left: 0;
+    margin-left: -193px;
+    margin-top: -21px;
+
+    @media screen and (max-width: $laptop-l) {
+      width: 240px;
+    }
+
+    @media screen and (max-width: $laptop-m) {
+      width: 240px;
+      margin-left: -203px;
+    }
+
+    @media screen and (max-width: $laptop) {
+      width: 250px;
+      margin-left: -193px;
+    }
+  }
 }

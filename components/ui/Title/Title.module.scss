@@ -5,4 +5,8 @@
   font-family: 'Lora';
   font-size: 36px;
   font-weight: 700;
+
+  @media screen and (max-width: $laptop) {
+    font-size: 30px;
+  }
 }

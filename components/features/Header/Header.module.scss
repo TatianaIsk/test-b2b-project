@@ -9,6 +9,10 @@
   background-color: $color-dark-blue;
 	opacity: 0.9;
 
+	@media screen and (max-width: $laptop) {
+		padding: 30px 100px;
+	}
+
   .logo {
     display: flex;
     align-items: center;

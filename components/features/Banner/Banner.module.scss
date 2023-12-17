@@ -45,21 +45,25 @@
     font-weight: 400;
   }
 
-	.btn {
-		background: none;
-	}
+  .btn {
+    background: none;
+  }
 
-	.line {
-		position: absolute;
-		top: 383px;
-		left: 0;
-	}
+  .line {
+    position: absolute;
+    top: 383px;
+    left: 0;
+  }
 
-	.arrow {
-		position: absolute;
-		top: 656px;
-		left: 385px;
-	}
+  .arrow {
+    position: absolute;
+    top: 656px;
+    left: 385px;
+
+    @media screen and (max-width: $laptop) {
+      top: 640px;
+    }
+  }
 
   .optionFirst {
     max-width: 240px;

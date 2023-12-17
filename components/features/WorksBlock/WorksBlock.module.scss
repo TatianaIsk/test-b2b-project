@@ -1,5 +1,10 @@
+@import './../../../styles/_variables.scss';
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	
+	@media screen and (max-width: $laptop) {
+		justify-content: center;
+	}
 }

@@ -10,9 +10,22 @@
     font-family: 'Open Sans';
     font-size: 24px;
     font-weight: 400;
+
+    @media screen and (max-width: $laptop-l) {
+			font-size: 20px;
+		}
+
+    @media screen and (max-width: $laptop) {
+      max-width: 200px;
+      font-size: 16px;
+    }
   }
 }
 
 .container > :first-child {
   margin-right: 30px;
+
+  @media screen and (max-width: $laptop) {
+    margin-right: 15px;
+  }
 }

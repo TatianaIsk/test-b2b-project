@@ -29,17 +29,32 @@
     width: 70px;
     height: 70px;
     background-image: url('./../../../assets/icons/privileges/icon1.svg');
+
+    @media screen and (max-width: $laptop) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &.prev2 {
     width: 70px;
     height: 70px;
     background-image: url('./../../../assets/icons/privileges/icon2.svg');
+
+    @media screen and (max-width: $laptop) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &.prev3 {
     width: 70px;
     height: 60px;
     background-image: url('./../../../assets/icons/privileges/icon3.svg');
+
+    @media screen and (max-width: $laptop) {
+      width: 60px;
+      height: 53px;
+    }
   }
 }

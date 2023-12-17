@@ -1,3 +1,5 @@
+@import './../../../styles/_variables.scss';
+
 .container {
 	.title {
 		display: flex;
@@ -18,5 +20,15 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-right: 157px;
+
+		@media screen and (max-width: $laptop-l) {
+			margin-right: 0px;
+		}
+	}
+
+	.img {
+		@media screen and (max-width: $laptop-l) {
+			width: 685px;
+		}
 	}
 }

@@ -12,7 +12,7 @@ const PrivilegesMenu = () => {
     <div className={s.container}>
       <div className={s.title}>
         <Title title='Наши преимущества' />
-        <Image src={line} alt='' />
+        <Image src={line} alt='' className={s.img}/>
       </div>
       <div className={s.options}>
         <Privilege icon='prev1'><span className={s.bold}>C 2000 г на рынке</span> наши кухни выбрали 10 000+ семей</Privilege>
