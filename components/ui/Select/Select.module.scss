@@ -1,0 +1,29 @@
+@import './../../../styles/_variables.scss';
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  display: inline-flex;
+  padding: 18px 50px 18px 32px;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: 1px solid $color-dark-blue;
+
+  color: $color-dark-blue;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 11px;
+
+  &:focus {
+    background-color: $color-dark-blue;
+    color: $color-white;
+  }
+
+}

@@ -1,0 +1,33 @@
+@import './../../../styles/_variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 915px;
+  justify-content: space-between;
+
+  .btnApply {
+    padding: 18px 32px;
+    border: none;
+    background-color: $color-grey;
+    color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 11px;
+  }
+
+  .btnReset {
+    padding: 18px 32px;
+		border: 1px solid $color-dark-blue;
+		background: none;
+		color: $color-dark-blue;
+		font-family: 'Open Sans';
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+	.filters {
+		
+	}
+}

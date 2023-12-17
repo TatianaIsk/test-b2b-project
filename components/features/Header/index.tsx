@@ -9,7 +9,7 @@ import Button from '../../ui/Button';
 
 const Header = () => {
   return (
-    <div className={s.container}>
+    <header className={s.container}>
       <div className={s.logo}>
         <Image src={logo} alt='logo' />
         <Image src={carts} alt='carts' />
@@ -26,7 +26,7 @@ const Header = () => {
         <p className={s.number}>+7 (988)-311-77-88</p>
         <Button>заказать звонок</Button>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -16,10 +16,26 @@
     height: 405px;
     display: flex;
     align-items: center;
+    margin-bottom: 158px;
   }
 
   .privilege > :first-child {
     margin-top: 40px;
     margin-right: 94px;
+  }
+
+  .works{
+    margin-left: 151px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .line {
+      position: absolute;
+      left: 0;
+    }
   }
 }

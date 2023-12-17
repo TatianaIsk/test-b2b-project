@@ -1,0 +1,18 @@
+@import './../../../styles/_variables.scss';
+
+.label {
+  color: $color-dark-blue;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  position: relative;
+
+  .count {
+    position: absolute;
+    top: -0.6em;
+    right: 0;
+    font-size: 0.7em;
+  }
+}
