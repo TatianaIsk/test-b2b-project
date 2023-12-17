@@ -1,9 +1,9 @@
 import { useFormContext } from 'react-hook-form';
+import { useState } from 'react';
 
-import Image from 'next/image';
 import clsx from 'clsx';
 
-import arrowClose from './../../../assets/select/arrow-close.svg'
+import Dropdown from './Dropdown';
 
 import s from './Select.module.scss';
 
@@ -14,23 +14,35 @@ interface SelectProps {
   name: string;
   disabled?: boolean;
   onChange?: (value: string) => void;
+  count?: number[];
 }
 
-const Select: React.FC<SelectProps> = ({ options, className, name, disabled, onChange, title }) => {
+const Select: React.FC<SelectProps> = ({ options, className, name, disabled, onChange, title, count }) => {
   const { register } = useFormContext();
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOpenMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleSelectOption = (option: string) => {
+    setSelectedOption(option);
+    onChange?.(option);
+    setIsOpen(false);
+  };
+
   return (
-    <select className={clsx(s.select, className)} onChange={e => onChange?.(e.target.value)} {...register(name, { disabled })}>
-      <option value=''>
-        {title}
-      </option>
-      {options &&
-        options.map((option, index) => (
-          <option key={index} value={options} className={s.option}>
-            {option}
-          </option>
-        ))}
-    </select>
+    <>
+      <div className={clsx(s.select, className, { [s.selectOpen]: isOpen })} {...register(name, { disabled })} onClick={handleOpenMenu}>
+        <div className={s.selectedOption}>
+          <p className={s.optionTitle}>{selectedOption || title}</p>
+          <div className={clsx(s.arrowIcon, { [s.open]: isOpen })} />
+        </div>
+      </div>
+      {isOpen && <Dropdown options={options} count={count} handleSelectOption={handleSelectOption} />}
+    </>
   );
 };
 

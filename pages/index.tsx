@@ -5,11 +5,13 @@ import Header from '../components/features/Header';
 
 import kitchen from './../assets/kitchen.svg';
 import line from './../assets/line-dark-short.svg';
+import block from './../assets/line-block.svg';
 
 import s from './MainPage.module.scss';
 import PrivilegesMenu from '../components/features/PrivilegesMenu';
 import Title from '../components/ui/Title';
 import Filters from '../components/features/Filters';
+import WorksBlock from '../components/features/WorksBlock';
 
 const MainPage = () => {
   return (
@@ -28,6 +30,8 @@ const MainPage = () => {
           <Image src={line} alt='' className={s.line} />
         </div>
         <Filters />
+        <Image src={block} alt='' className={s.block}/>
+        <WorksBlock/>
       </section>
     </div>
   );

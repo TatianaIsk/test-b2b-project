@@ -1,13 +1,12 @@
 @import './../../../styles/_variables.scss';
 
 .select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
   display: inline-flex;
-  padding: 18px 50px 18px 32px;
+  padding: 18px 32px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  position: relative;
 
   background: none;
   border: 1px solid $color-dark-blue;
@@ -21,9 +20,31 @@
   text-transform: uppercase;
   margin-right: 11px;
 
-  &:focus {
-    background-color: $color-dark-blue;
-    color: $color-white;
+  .selectedOption {
+    display: flex;
+    align-items: center;
   }
 
+  .selectedOption > :first-child {
+    margin-right: 10px;
+  }
+
+  .arrowIcon {
+    @include background-style;
+    background-image: url('./../../../assets/select/arrow-close.svg');
+    width: 23px;
+    height: 11px;
+  }
+
+  .open {
+    @include background-style;
+    background-image: url('./../../../assets/select/arrow-open.svg');
+    width: 23px;
+    height: 11px;
+  }
+}
+
+.selectOpen {
+  background-color: $color-dark-blue;
+  color: $color-white;
 }

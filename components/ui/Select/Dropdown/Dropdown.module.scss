@@ -1,0 +1,16 @@
+@import './../../../../styles/_variables.scss';
+
+.options {
+	position: absolute;
+	margin-top: 10px;
+	z-index: 3;
+	padding: 20px 20px 0 20px;
+
+	background-color: $color-white;
+	width: 207px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+	.option {
+		margin-bottom: 15px;
+	}
+}

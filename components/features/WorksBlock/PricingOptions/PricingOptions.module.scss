@@ -1,0 +1,57 @@
+@import './../../../../styles/_variables.scss';
+
+.options {
+  display: flex;
+	margin-bottom: 18px;
+
+  .optionsFirst {
+    padding-right: 30px;
+		color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+		border-right: 1px solid $color-border;
+		border-radius: 6px;
+  }
+
+  .optionsFirst > :first-child {
+    color: $color-dark-blue;
+    font-weight: 700;
+		margin-bottom: 6px;
+  }
+
+	.optionsSecond {
+    padding-right: 30px;
+		padding-left: 40px;
+		color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+		border-right: 1px solid $color-border;
+		border-radius: 6px;
+  }
+
+  .optionsSecond > :first-child {
+    color: $color-dark-blue;
+    font-weight: 700;
+		margin-bottom: 6px;
+  }
+
+	.optionsThird {
+ 
+		padding-left: 40px;
+		color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .optionsThird > :first-child {
+    color: $color-dark-blue;
+    font-weight: 700;
+		margin-bottom: 6px;
+  }
+}

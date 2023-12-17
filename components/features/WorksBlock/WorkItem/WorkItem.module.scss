@@ -1,0 +1,56 @@
+@import './../../../../styles/_variables.scss';
+
+.container {
+  background-color: $color-light;
+  border: 1px solid $color-dark-blue;
+  z-index: 2;
+  padding: 56px 48px 54px 133px;
+  position: relative;
+  max-width: 588px;
+  margin: 0 48px 48px 198px;
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 48px;
+  }
+
+  .length {
+    color: $color-grey-dark;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+		margin-bottom: 46px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+	.btn {
+		background: none;
+		border: 1px solid $color-grey-dark;
+		color: $color-grey-dark;
+	}
+
+	.btns > :first-child {
+    margin-right: 16px;
+  }
+
+	.img {
+		position: absolute;
+		left: 0;
+		margin-left: -193px;
+		margin-top: -21px;
+	}
+}

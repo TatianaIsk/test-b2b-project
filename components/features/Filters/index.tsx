@@ -12,7 +12,12 @@ const Filters = () => {
     <FormProvider {...useForm()}>
       <div className={s.container}>
         <div className={s.filters}>
-          <Select name='layout' title='планировка' options={layout.map(({ name, count }) => name)} />
+          <Select
+            name='layout'
+            title='планировка'
+            options={layout.map(({ name }) => name)}
+            count={layout.map(({count}) => count)}
+          />
           <Select name='layout' title='стиль кухни' />
           <Select name='layout' title='цвет' />
         </div>
