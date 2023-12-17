@@ -1,0 +1,22 @@
+.container {
+	.title {
+		display: flex;
+		align-items: center;
+		margin-bottom: 56px;
+	}
+
+	.title > :first-child {
+    margin-right: 20px;
+  }
+
+	.bold {
+		font-weight: 700;
+	}
+
+	.options {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-right: 157px;
+	}
+}

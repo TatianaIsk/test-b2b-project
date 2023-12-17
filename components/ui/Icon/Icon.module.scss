@@ -24,4 +24,22 @@
     height: 32px;
     background-image: url('./../../../assets/icons/options.svg');
   }
+
+  &.prev1 {
+    width: 70px;
+    height: 70px;
+    background-image: url('./../../../assets/icons/privileges/icon1.svg');
+  }
+
+  &.prev2 {
+    width: 70px;
+    height: 70px;
+    background-image: url('./../../../assets/icons/privileges/icon2.svg');
+  }
+
+  &.prev3 {
+    width: 70px;
+    height: 60px;
+    background-image: url('./../../../assets/icons/privileges/icon3.svg');
+  }
 }

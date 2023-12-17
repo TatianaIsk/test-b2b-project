@@ -1,0 +1,18 @@
+@import './../../../../styles/_variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+
+  .text {
+    max-width: 270px;
+    color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.container > :first-child {
+  margin-right: 30px;
+}
