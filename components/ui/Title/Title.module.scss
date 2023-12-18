@@ -9,4 +9,8 @@
   @media screen and (max-width: $laptop) {
     font-size: 30px;
   }
+
+  @media screen and (max-width: $desktop) {
+    font-size: 25px;
+  }
 }

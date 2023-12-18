@@ -24,11 +24,36 @@
 		@media screen and (max-width: $laptop-l) {
 			margin-right: 0px;
 		}
+
+		@media screen and (max-width: $desktop) {
+			flex-wrap: wrap;
+			margin-right: 107px;
+		}
+
+		@media screen and (max-width: $mobile) {
+      margin-right: 107px;
+    }
 	}
 
 	.img {
 		@media screen and (max-width: $laptop-l) {
 			width: 685px;
 		}
+
+		@media screen and (max-width: $desktop) {
+			width: 560px;
+		}
+
+		@media screen and (max-width: $mobile-m) {
+			width: 460px;
+		}
+
+		@media screen and (max-width: $mobile-s) {
+      width: 260px;
+    }
+
+		@media screen and (max-width: $mobile-s) {
+      width: 120px;
+    }
 	}
 }

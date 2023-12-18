@@ -6,6 +6,10 @@
   align-items: flex-start;
   margin: 160px 0 140px 150px;
 
+  @media screen and (max-width: $mobile-xs) {
+    margin: 160px 0 140px 100px;
+  }
+
   .title {
     color: $color-white;
     font-family: 'Lora';
@@ -13,6 +17,10 @@
     font-weight: 400;
     max-width: 729px;
     margin-bottom: 48px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 50px;
+    }
   }
 
   .wallet {
@@ -63,6 +71,14 @@
     @media screen and (max-width: $laptop) {
       top: 640px;
     }
+
+    @media screen and (max-width: $mobile-s) {
+      top: 655px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      top: 630px;
+    }
   }
 
   .optionFirst {
@@ -70,13 +86,34 @@
     position: absolute;
     top: 179px;
     left: 546px;
+
+    @media screen and (max-width: $mobile-s) {
+      top: 589px;
+    }
   }
 
   .optionSecond {
     max-width: 266px;
     position: absolute;
-    top: 328px;
-    left: 959px;
+    top: 280px;
+    left: 869px;
+
+    @media screen and (max-width: $mobile-m) {
+      max-width: 286px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      top: 480px;
+      left: 709px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
+    @media screen and (max-width: $mobile-xs) {
+      display: none;
+    }
   }
 
   .optionThird {
@@ -84,5 +121,22 @@
     position: absolute;
     top: 528px;
     left: 891px;
+
+    @media screen and (max-width: $mobile-m) {
+      top: 488px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      top: 690px;
+      left: 709px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
+    @media screen and (max-width: $mobile-xs) {
+      display: none;
+    }
   }
 }

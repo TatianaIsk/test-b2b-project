@@ -20,6 +20,10 @@
   text-transform: uppercase;
   margin-right: 11px;
 
+  @media screen and (max-width: $mobile-s) {
+    margin-bottom: 10px;
+  }
+
   .selectedOption {
     display: flex;
     align-items: center;

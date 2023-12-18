@@ -9,4 +9,10 @@
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: 'Open Sans';
+	cursor: pointer;
+
+	@media screen and (max-width: $mobile-m) {
+		padding: 10px 15px;
+		font-size: 14px;
+	}
 }

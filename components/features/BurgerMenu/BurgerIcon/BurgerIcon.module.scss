@@ -1,0 +1,61 @@
+@import './../../../../styles/_variables.scss';
+
+.icon {
+  position: absolute;
+  height: 32px;
+  width: 30px;
+  top: 40px;
+  right: 50px;
+  z-index: 5;
+  cursor: pointer;
+
+  .hamburgerBars {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bar {
+      display: block;
+      height: 4px;
+      width: 120%;
+      border-radius: 10px;
+      background: $color-dark-blue;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .bar:first-child {
+      transform-origin: 0% 0%;
+      transition-delay: 0.2s;
+    }
+
+    .bar:last-child {
+      transform-origin: 0% 100%;
+      transition-delay: 0.2s;
+    }
+  }
+
+  &.open {
+    .bar:first-child {
+      transform: rotate(35deg);
+      transition-delay: 0s;
+    }
+
+    .bar:nth-child(2) {
+      transform: scaleY(0);
+      transition-delay: 0.2s;
+    }
+
+    .bar:last-child {
+      transform: rotate(-35deg);
+      transition-delay: 0s;
+    }
+  }
+}

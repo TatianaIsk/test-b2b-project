@@ -22,10 +22,19 @@
   .privilege > :first-child {
     margin-top: 40px;
     margin-right: 94px;
+
+    @media screen and (max-width: $mobile-s) {
+      margin-right: 14px;
+      width: 360px;
+    }
   }
 
   .works{
     margin-left: 151px;
+
+    @media screen and (max-width: $mobile) {
+      margin-left: 50px;
+    }
 
     .title {
       display: flex;
@@ -36,6 +45,10 @@
     .line {
       position: absolute;
       left: 0;
+
+      @media screen and (max-width: $mobile) {
+        width: 40px;
+      }
     }
   }
 
@@ -58,5 +71,31 @@
       width: 360px;
       margin-top: -340px;
     }
+
+    @media screen and (max-width: $desktop-l) {
+      width: 330px;
+      margin-top: -340px;
+    }
+
+    @media screen and (max-width: $desktop) {
+			width: 367px;
+      margin-top: -340px;
+		}
+
+    @media screen and (max-width: $mobile-m) {
+			width: 450px;
+      margin-top: -370px;
+		}
+
+    @media screen and (max-width: $mobile-s) {
+      width: 400px;
+      margin-top: -350px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 300px;
+      margin-top: -500px;
+    }
   }
+  
 }
